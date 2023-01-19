@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vizsga 2022. 11. 28.</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <style>
+    .info {
+      background-color: rgb(23, 162, 184);
+      box-sizing: border-box;
+      color: rgb(255, 255, 255);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 8px;
+      padding-bottom: 16px;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 16px;
+      text-align: left
+    }
+
+    .mt-10 {
+      margin-top: 10px
+    }
+
+    ol {
+      list-style-type: lower-alpha;
+    }
+
+    .sentences p {
+      margin-left: 15px;
+      font-size: 15px;
+      background: rgb(243, 128, 128);
+    }
+   
+    .oszlopok{
+      display: inline-block;
+      border: thin solid black;
+      padding: 8px;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body cz-shortcut-listen="true">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="page-header">
+              <h3>Vizsga 2022. 11. 28.</h3>
+            </div>
+          </div>
+          <div class="panel-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="info">
+                  Figyelem! A feladatokat a script.js-ben oldd meg.
+                  <br>
+                  A dolgozat.html igény szerint módosítható. <br>
+                  Ha elkészültél, a fájlokat rakd egy mappába, névnek add meg a teljes neved, majd ZIP formátumba
+                  csomagolva küldd el. Google Drive-on keresztül, vagy akár privát üzenetben slacken<br>
+                  <b>Sok sikert!</b>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <h3>1.</h3>
+                <h4>
+                  Promt segítségével kérd be "n" (n egy numerikus típus) értékét, majd konzolba írd ki az első n,
+                  páratlan szám összegét.
+                </h4>
+
+              </li>
+
+              <li class="list-group-item">
+
+                <h3>2.</h3>
+                <h4>
+                  Írj egy függvényt, mely bementi paraméterként megkap egy tömböt, kimenetként pedig visszaadja a tömb
+                  legisebb értékét.
+                </h4>
+
+              </li>
+              <li class="list-group-item sentences">
+                <h3>3.</h3>
+                <h4>
+                  Adott az alábbi String.
+                  <pre>
+var szoveg = "Botond talált 5 cukorkát. Ebből 2 darabot odaadott Sárának, így maradt neki 3 cukorkája, amiből 1-et Zsuzsának adott. Végül Botondnak 2 cukorkája maradt.";</pre>
+                  <ol>
+                    <li>
+                      <h4>
+                        Reguláris kifejezés segítségével szedjük ki a 0-9 közti számokat a szövegből, és tároljuk el egy
+                        tömbbe.
+                      </h4>
+                      <hr>
+                    </li>
+                    <li>
+                      <h4>
+                        Konzolban mutassákot meg, hogy hány számot talált a reguláris kifejezés.
+                      </h4>
+                      <hr>
+                    </li>
+                    <li>
+                      <h4>
+                        A 2. feladatban megírt függvény segítségével konzolba jelenítsétek meg az a. pontban létrehozott
+                        tömb legkisebb értékét.
+                      </h4>
+                      <hr>
+                    </li>
+                    <li>
+                      <h4>
+                        A "szoveg" változóban szereplő mondatokat jelenítsétek meg külön-külön "p" tegekben a HTML
+                        oldalon.
+                      </h4>
+                    </li>
+                  </ol>
+                </h4>
+
+              </li>
+              <li class="list-group-item days">
+                <h3>4.</h3>
+                <h4>
+                  írj programot, mely kiszámolja, hogy hány nap telt el 2021 november 20.-a óta. Majd az eredményt
+                  jelenítséteg meg a HTML oldalon,
+                  egy dinamikusan létrehozott "span" tegben. Ennek a "span" tegnek állítsatok piros színt és világos
+                  piros háttérszínt.
+                </h4>
+
+              </li>
+              <li class="list-group-item">
+                <h3>5.</h3>
+                <h4>
+                  <h4>
+                    Írjatok egy függvényt, mely bemeneti paraméterként megkapja egy négyzetháló sorainak és oszlopainak
+                    a számát, és egy selectort.
+                    A függvény divekből rakja össze a négyzethálót (mint egy sakktábla), az egyes divekben írjuk bele a
+                    div sorszámát, majd az
+                    összeállított négyzethálót, jelenítsétek meg a selector segítségével kiválasztott HTML elemben.
+                  </h4>
+                </h4>
+                <div class="negyzethalo"></div>
+              </li>
+              <li class="list-group-item">
+                <h3>6.</h3>
+                <h4>
+                  Küldj kérést a https://jsonplaceholder.typicode.com/todos erőforrásra, majd az alábbi templét szerint,
+                  (template a HTML kódban) listázd ki csak azokat
+                  a tennivalókat, amelyek még nincsenek befejezve.
+                  <ul class="list-title">
+                   
+                  </ul>
+                </h4>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
